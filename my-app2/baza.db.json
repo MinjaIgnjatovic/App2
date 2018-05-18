@@ -1,0 +1,47 @@
+{
+    "comments": [
+      {
+        "username": "Ana",
+        "email":"email1@gmail.com",
+        "comment": "The service is great!" 
+      },
+       {
+        "username": "Maja",
+        "email":"email2@gmail.com",
+        "comment": "Great place!" 
+      },
+       {
+        "username": "Aleksa",
+        "email":"email3@gmail.com",
+        "comment": "It is awesome" 
+      }
+      
+    ],
+    "beers":[
+    {
+      "name":"Svetionik",
+      "alcohol":"14%",
+      "company":"Crew",
+      "ipa-apa":"IPA",
+      "color":"tamno"
+      
+    },
+    {
+      "name":"Ministarsko",
+      "alcohol":"8%",
+      "company":"Ministarstvo",
+      "ipa-apa":"APA",
+      "color":"svetlo"
+      
+    },
+    {
+      "name":"DrIPAc",
+      "alcohol":"9%",
+      "company":"Ministarstvo",
+      "ipa-apa":"IPA",
+      "color":"svetlo"
+      
+    }
+    
+    ]
+   }
