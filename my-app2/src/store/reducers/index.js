@@ -1,10 +1,12 @@
-import {combineReducers} from 'redux'; //skupi sve reducere
+import {combineReducers} from 'redux'; 
 import postReducer from './postReducer';
 import fetchReducer from './fetchReducer';
+import pronadjiReducer from './pronadjiReducer';
 
 const rootReducer=combineReducers({
     posts:fetchReducer,
-    newPost:postReducer
+    newPost:postReducer,
+    pronadji:pronadjiReducer
      
 });
 

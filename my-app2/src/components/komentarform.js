@@ -8,9 +8,9 @@ class Komentarform extends Component{
    constructor(props){
 	   super(props);
 	   this.state={
-		   name: '',
+		   username: '',
 		   email: '',
-		   message: ''
+		   comment: ''
 	   };
 
 	   this.onChange=this.onChange.bind(this);
@@ -26,16 +26,16 @@ class Komentarform extends Component{
 	e.preventDefault();
 
 	const post={
-		name: this.state.name,
+		username: this.state.username,
 		email: this.state.email,
-		message: this.state.message
+		comment: this.state.comment
 	};
-	console.log(post);
+	//this.state=post;
    this.props.dodaj(post);
-	this.state=post;
 	
 	
-	/*fetch("http://localhost:3000/comments",{
+	
+	fetch("http://localhost:3000/comments",{
 		method:'POST',
 		headers:{
 			'content-type':'application/json'
@@ -43,8 +43,7 @@ class Komentarform extends Component{
 		body:JSON.stringify(post)
 	})
 	.then(res=>res.json())
-	.then(data=>console.log(data));*/
-
+	.then(data=>console.log(data));
 
    }
 	
@@ -69,7 +68,7 @@ class Komentarform extends Component{
 					<form  onSubmit={this.onSubmit} method="post" role="form" className="form contactForm">
 						<div className="col-md-4">
 							<div className="form-group">
-								<input type="text" name="name" onChange={this.onChange} value={this.state.name} className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<input type="text" name="username" onChange={this.onChange} value={this.state.username} className="form-control" id="username" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
 								<div className="validation"></div>
 							</div>
 						</div>
@@ -86,12 +85,12 @@ class Komentarform extends Component{
 						</div>
 						<div className="col-md-12">
 							<div className="form-group">
-								<textarea className="form-control" name="message" onChange={this.onChange} value={this.state.message} rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+								<textarea className="form-control" name="comment" onChange={this.onChange} value={this.state.comment} rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
 								<div className="validation"></div>
 							</div>
 						</div>
 						<div className="submit">
-							<button className="btn btn-default"  type="submit">Send Now</button>
+							<button className="btn"  type="submit">Dodaj komentar </button>
 						</div>
 						
 					</form>
@@ -108,14 +107,14 @@ class Komentarform extends Component{
 function mapStateToProps (state)
 {
     return{
-        //sve sto ovde nazove ide u props
-        post: state.newPost //na ovo se subscrajbuje
+        
+        post: state.newPost 
     }
 }
 function MapDispatchToProps(dispatch)
 {
     return bindActionCreators({
-        dodaj: addPost//bind props na action creator
+        dodaj: addPost
     },dispatch);
 }
 

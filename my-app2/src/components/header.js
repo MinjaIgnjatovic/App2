@@ -49,7 +49,7 @@ export default class Header extends Component{
 						<ul className="nav navbar-nav navbar-right">
 							<li><a href="#home">home</a></li>
 							<li><a href="#about">o nama</a></li>
-							<li><a href="#service">usluge</a></li>
+							<li><a href="#service">ponuda</a></li>
 							<li><a href="#portfolio">fotografije</a></li>
 							<li><a href="#contact">utisci posetilaca</a></li>
 							

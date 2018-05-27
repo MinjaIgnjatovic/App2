@@ -1,19 +1,200 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
   "comments": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "Ana",
+      "email": "email1@gmail.com",
+      "comment": "The service is great!"
+    },
+    {
+      "id": 2,
+      "username": "Maja",
+      "email": "email2@gmail.com",
+      "comment": "Great place!"
+    },
+    {
+      "id": 3,
+      "username": "Aleksa",
+      "email": "email3@gmail.com",
+      "comment": "It is awesome"
+    },
+    {
+      "username": "Jana",
+      "email": "janad@gmail.com",
+      "comment": "not bad",
+      "id": 4
+    },
+    {
+      "username": "Anica",
+      "email": "anica@hotmail.com",
+      "comment": "greaaat",
+      "id": 5
+    },
+    {
+      "username": "Ana",
+      "email": "anna@gmail.com",
+      "comment": "jako dobro",
+      "id": 6
+    },
+    {
+      "username": "Anaana",
+      "email": "nadja.ignj@hotmail.com",
+      "comment": "aaaa",
+      "id": 7
+    },
+    {
+      "username": "Anaana",
+      "email": "minja.shhh@gmail.com",
+      "comment": "klklk",
+      "id": 8
+    },
+    {
+      "username": "Antonijeee",
+      "email": "emaio@gmail.com",
+      "comment": "kajsnjankjsnakdjnaksjd",
+      "id": 9
+    },
+    {
+      "username": "Tea",
+      "email": "tea@gmail.com",
+      "comment": "SUUUUUUUPER",
+      "id": 10
+    },
+    {
+      "username": "Minja",
+      "email": "mi@gmail.com",
+      "comment": "scidjasjadkaj",
+      "id": 11
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "beers": [
+    {
+      "name": "Svetionik",
+      "alcohol": "5",
+      "company": "Crew",
+      "ipa-apa": "ipa",
+      "color": "svetlo",
+      "id": 1
+    },
+    {
+      "name": "Ministarsko",
+      "alcohol": "7",
+      "company": "Ministarstvo",
+      "ipa-apa": "ipa",
+      "color": "svetlo",
+      "id": 2
+    },
+    {
+      "name": "DrIPAc",
+      "alcohol": "10",
+      "company": "Ministarstvo",
+      "ipa-apa": "ipa",
+      "color": "svetlo",
+      "id": 3
+    },
+    {
+      "name": "Grizzly",
+      "alcohol": "12.5",
+      "company": "KORS",
+      "ipa-apa": "ipa",
+      "color": "svetlo",
+      "id": 4
+    },
+    {
+      "name": "Pilsner",
+      "alcohol": "5",
+      "company": "Pilsner",
+      "ipa-apa": "apa",
+      "color": "tamno",
+      "id": 5
+    },
+    {
+      "name": "Alien",
+      "alcohol": "7",
+      "company": "Crow",
+      "ipa-apa": "apa",
+      "color": "tamno",
+      "id": 6
+    },
+    {
+      "name": "Disco",
+      "alcohol": "10",
+      "company": "Kabinet",
+      "ipa-apa": "apa",
+      "color": "tamno",
+      "id": 7
+    },
+    {
+      "name": "Shatzi",
+      "alcohol": "12.5",
+      "company": "Kabinet",
+      "ipa-apa": "apa",
+      "color": "tamno",
+      "id": 8
+    },
+    {
+      "name": "Dilemma",
+      "alcohol": "5",
+      "company": "Dilemma",
+      "ipa-apa": "apa",
+      "color": "svetlo",
+      "id": 9
+    },
+    {
+      "name": "Korsar",
+      "alcohol": "7",
+      "company": "Kors",
+      "ipa-apa": "apa",
+      "color": "svetlo",
+      "id": 10
+    },
+    {
+      "name": "Skiper",
+      "alcohol": "10",
+      "company": "Tron",
+      "ipa-apa": "apa",
+      "color": "svetlo",
+      "id": 11
+    },
+    {
+      "name": "Salto",
+      "alcohol": "12.5",
+      "company": "Salto",
+      "ipa-apa": "apa",
+      "color": "svetlo",
+      "id": 12
+    },
+    {
+      "name": "Pirate",
+      "alcohol": "5",
+      "company": "Crow",
+      "ipa-apa": "ipa",
+      "color": "tamno",
+      "id": 13
+    },
+    {
+      "name": "Pivdzan",
+      "alcohol": "7",
+      "company": "Pivdzan",
+      "ipa-apa": "ipa",
+      "color": "tamno",
+      "id": 14
+    },
+    {
+      "name": "Heartbeet",
+      "alcohol": "10",
+      "company": "Tron",
+      "ipa-apa": "ipa",
+      "color": "tamno",
+      "id": 15
+    },
+    {
+      "name": "Olga",
+      "alcohol": "12.5",
+      "company": "Kabinet",
+      "ipa-apa": "ipa",
+      "color": "tamno",
+      "id": 16
+    }
+  ]
 }
