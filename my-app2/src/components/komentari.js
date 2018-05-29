@@ -41,9 +41,9 @@ class Komentari extends Component{
 	}
 
 	renderList(){
-	console.log(this.state);
+	//console.log(this.state);
 		const {posts}=this.state;
-		//this.props.posts=posts;
+
 		return(posts.map(post=>{
 			return(
 				
@@ -57,16 +57,14 @@ class Komentari extends Component{
 }
 renderPost(){
 	return(
+		
 	<li key={this.props.newPost.email}>
-		<strong>{this.props.newPost.username}: </strong>
+		<strong>{this.props.newPost.username } </strong>
 		<span>{this.props.newPost.comment}</span>
 		</li>
 	)
 }
-		
-            
-                
-            
+		          
 	
 /*
 	render(){
@@ -112,16 +110,11 @@ renderPost(){
 	}*/
 }
 
-
 	function mapStateToProps (state)
 {
     return{
-       
-		posts: state.posts,
+		//posts: state.posts,
 		newPost:state.newPost
     }
 }
-
-
-
 export default connect(mapStateToProps)(Komentari);

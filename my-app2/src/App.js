@@ -15,7 +15,6 @@ import KomentarForm from './components/komentarform.js';
 import Footer from './components/footer.js';
 import Portfolio from './components/portfolio.js';
 import Service from './components/servicee.js';
-import Slider from './components/slider.js';
 
 //const store=createStore(()=>[],{},applyMiddleware());
 //const store=createStore(rootReducer,initialState,applyMiddleware());
@@ -27,7 +26,7 @@ export default class App extends Component {
    <div id="top" data-spy="scroll">
  
         <Header> </Header>
-        <Slider> </Slider>
+        
         <About> </About>
         <Aboutbg> </Aboutbg>
         <Service> </Service>

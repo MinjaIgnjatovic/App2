@@ -7,12 +7,14 @@ class Servicee extends Component{
    
 	constructor(props){
 		super(props);
-		this.state={
+		/*this.state={
 			procenat:'',
 			boja:'',
 			ipaapa:''
+		};*/
+		this.state={
+			found:{}
 		};
-
 		this.onChange=this.onChange.bind(this);
 		this.onSubmit=this.onSubmit.bind(this);
 	}
@@ -23,21 +25,35 @@ class Servicee extends Component{
 	}
 
 	onSubmit(e){
+		
 		e.preventDefault();
-
-		const izbor={
+		/*const izbor={
 			procenat: this.state.procenat,
 			boja: this.state.boja,
 			ipaapa: this.state.ipaapa
 		}
-		 this.props.nadji(izbor);
+		
+		this.props.nadji(izbor);*/
 
+		var obj=null;
+		const procenat=document.getElementsByName("procenat")[0].value;
+		 const boja=document.getElementsByName("boja")[0].value;
+		 const ipaapa=document.getElementsByName("ipaapa")[0].value;
+		 fetch("http://localhost:3000/beers?alcohol=" +procenat+"&color="+boja+"&ipa-apa="+ipaapa)
+            .then(response=>{
+                const res=response.json()
+                .then(res=>{              
+					//this.setState({ found:res} );
+					console.log(res);
+					this.setState(res);
+					this.props.nadji(this.state);        
+                });
+            })    
+		 
+			
+		 
 	}
-	
-	
-	
-	
-	
+
 	render(){
         return(
             <div id="service">
@@ -56,6 +72,7 @@ class Servicee extends Component{
 			<div className="outer-box clearfix">
 
 				<div className="services-column">
+				
 					<div className="content-outer">
 						<div className="row clearfix">
 
@@ -78,7 +95,7 @@ class Servicee extends Component{
 							<div className="service-block col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<div className="inner-box">
 									<div className="icon-box"></div>
-									<h4>DOGMA</h4>
+								<h4>DOGMA</h4>
 									<div className="text">Volimo pivo, ali još više volimo da ga delimo sa prijateljima. U fermentorima mešamo znanje, ljubav, maštu, iskustvo ali i lucidnost. Dogmu ćemo stvarati sve dok bude priča koje će uz naša piva biti bolje ispričane. Za nas je Dogma osećaj kada vas vidimo da naručite još jednu turu. </div>
 								</div>
 							</div>
@@ -106,13 +123,15 @@ class Servicee extends Component{
 
 			
 				<div className="content-column clearfix">
+				
 					<div className="content-box">
+					
 						<div className="inner-box">
 							<form  onSubmit={this.onSubmit} method="post" role="form">
 							<div className="sec-title aligned-right">
 								<h2>Potrazite vas <span>savrsen spoj</span></h2>
 							</div>
-							<div className="text">Izaberite opcije a mi cemo izdvojiti iz ponude vas savrsen spoj! </div>
+							<div className="text">Izaberite opcije a mi cemo izdvojiti iz ponude savrsen izbor za vas! </div>
 							
 							<div className="text">Procenat alkohola: </div>
 							<select name="procenat" onChange={this.onChange}>
@@ -138,36 +157,30 @@ class Servicee extends Component{
 							 </select>
 
 							<br />
-							<br />
+							<br />		
+												
 							<p><button className="btn" type='submit'>Pronadji</button></p>
+							
 					     </form>
-						 
+						 <br/>
+						 <br/>
+						 <div className='pronadjen'>
+						 <p>Rezultat pretrage</p>
+							<p>Naziv: <strong>{this.props.pronadjen.name}</strong></p>
+							<p>Proizvodjac: {this.props.pronadjen.company}</p>
+							
+							</div>
 						</div>
 					</div>
 				</div>
-
+				
 
 			</div>
 		</section>
 
-		<div className="service-footer hidden-xs">
-			<div className="container">
-				<div className="row">
-					<div className="col-md-7">
-						<div className="service-footer-left">
-							<h3>Need to <span>Consult with us</span> ? Book an appointment</h3>
-							<p>The Brady Bunch the Brady Bunch that's the way we all became the Brady Bunch</p>
-						</div>
-					</div>
+		
 
-					<div className="col-md-5">
-						<div className="service-footer-right">
-							<button className="btn">book now</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 	</div>
         );
     }

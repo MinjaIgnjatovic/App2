@@ -18,8 +18,7 @@ class Komentarform extends Component{
    }
 
    onChange(e){
-	   this.setState({[e.target.name]:e.target.value});
-	   
+	   this.setState({[e.target.name]:e.target.value});   
    }
 	
    onSubmit(e){
@@ -32,9 +31,7 @@ class Komentarform extends Component{
 	};
 	//this.state=post;
    this.props.dodaj(post);
-	
-	
-	
+
 	fetch("http://localhost:3000/comments",{
 		method:'POST',
 		headers:{
