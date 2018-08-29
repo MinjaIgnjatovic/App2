@@ -43,10 +43,172 @@
       "id": 7
     },
     {
-      "username": "Marko",
-      "email": "marko@lala.com",
-      "comment": "Super ponuda!",
+      "username": "tea",
+      "email": "nadja.ignj@hotmail.com",
+      "comment": "suuuper",
       "id": 8
+    }
+  ],
+  "breweries": [
+    {
+      "id": 0,
+      "name": "The Black Turtle",
+      "imgsrc": "https://beograd.travel/wp-content/uploads/2016/10/The-Black-Turtle-Pub.png",
+      "description": "The Black Turtle” pabovi, poznatiji samo kao “Kornjače”, dobro su znani medju beogradskim pivopijama. Prostrani šankovi, topao ambijent kojim dominira drvo, rok i bluz muzika kao i jedinstvena ponuda piva su kvaliteti kojima se ističemo. Prijatna atmosfera i odlična zabava su sastavni deo svakodnevnog života Crne Kornjače.",
+      "piva": [
+        {
+          "id": 0,
+          "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_xdKfxZi_bGub9lDiJpqfQLteTFzEE-udgw_ar3vNGRhprRnj",
+          "naziv": "Lager",
+          "boja": "Svetlo",
+          "procenat": "4.5%",
+          "ia": "IPA"
+        },
+        {
+          "id": 1,
+          "imgsrc": "https://www.kraftlokator.com/wp-content/uploads/2018/01/The-Black-Turtle-Brewery-Blueberry.png",
+          "naziv": "Blueberry",
+          "boja": "Tamno",
+          "procenat": "5.5%",
+          "ia": "APA"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Kabinet",
+      "imgsrc": "http://svetpiva.rs/wp-content/uploads/2014/12/3-kabinet-logo.jpg",
+      "description": "Sebe smatramo pasioniranim gurmanima. U potrazi za novim i neobicnim ukusima, u želji da ponudimo kvalitetno craft pivo od biranih sastojaka stvorili smo Kabinet Brewery. Naše pivo se proizvodi u Nemenikucama, na suncanoj padini u podnožju Kosmaja.      ",
+      "piva": [
+        {
+          "id": 0,
+          "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/04/Svetionik-Compressor-300x300.jpg",
+          "naziv": "Bledoliki",
+          "boja": "Svetlo",
+          "procenat": "4.5%",
+          "ia": "IPA"
+        },
+        {
+          "id": 1,
+          "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/05/Kabinet-pivo-Rufaro.png",
+          "naziv": "Rufaro",
+          "boja": "Svetlo",
+          "procenat": "5.5%",
+          "ia": "APA"
+        },
+        {
+          "id": 2,
+          "imgsrc": "https://i.pinimg.com/736x/0d/1c/85/0d1c857d76ad6b6a87e0bdecf6d84156--kabinet-craft-beer.jpg",
+          "naziv": "Super Nova",
+          "boja": "Svetlo",
+          "procenat": "6.5%",
+          "ia": "iPA"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Razbeerbriga",
+      "imgsrc": "http://razbeerbriga.rs/wp-content/uploads/2017/12/logo_gray.png",
+      "description": "RazBeerbriga uspešno sarađuje sa domaćim i stranim stručnjacima iz pivske industrije i na taj način neprestano primenjuje nove tehnike i metode u proizvodnji kvalitetnih piva prirodnih i raznovrsnih aroma i sastojaka.",
+      "piva": [
+        {
+          "id": 0,
+          "imgsrc": "http://razbeerbriga.rs/wp-content/uploads/2017/11/stalker_shop-600x600-1.jpg",
+          "naziv": "Stalker",
+          "boja": "Svetlo",
+          "procenat": "5.5%",
+          "ia": "IPA"
+        },
+        {
+          "id": 1,
+          "imgsrc": "https://res.cloudinary.com/ratebeer/image/upload/d_beer_icon_default.png,f_auto/beer_1179",
+          "naziv": "Black Rider",
+          "boja": "Tamno",
+          "procenat": "5.5%",
+          "ia": "APA"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dogma",
+      "imgsrc": "https://www.kraftlokator.com/wp-content/uploads/2017/05/Dogma-Brewery.png",
+      "description": "Volimo pivo, ali još više volimo da ga delimo sa prijateljima. U fermentorima mešamo znanje, ljubav, maštu, iskustvo ali i lucidnost. Dogmu cemo stvarati sve dok bude prica koje ce uz naša piva biti bolje ispricane. Za nas je Dogma osecaj kada vas vidimo da narucite još jednu turu.",
+      "piva": [
+        {
+          "id": 0,
+          "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/05/zanasko-pivo-hoktopod-dogma-brewery.jpg",
+          "naziv": "Hoptopod",
+          "boja": "Svetlo",
+          "procenat": "5.5%",
+          "ia": "IPA"
+        },
+        {
+          "id": 1,
+          "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/04/Svetionik-Compressor.jpg",
+          "naziv": "Svetionik",
+          "boja": "Tamno",
+          "procenat": "5.5%",
+          "ia": "APA"
+        },
+        {
+          "id": 2,
+          "imgsrc": "http://www.totallybeer.com.br/imgsist/loja/Cervejadogmabeer.jpg",
+          "boja": "Tamno",
+          "naziv": "Cervejas",
+          "procenat": "7%",
+          "ia": "Apa"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Brewdog",
+      "imgsrc": "https://www.madebycooper.co.uk/assets/images/supplied/brew-dog.png",
+      "description": "Nasa najsavremenija eko-pivara nalazi se na lokaciji zelenog polja u Ellonu, severno od Aberdeena. Jedna je od najnaprednijih na svetu i odavde se stalno trudimo da osporimo predrasude ljudi o tome kakvo je pivo i kako to može ukusiti.      ",
+      "piva": [
+        {
+          "id": 0,
+          "imgsrc": "https://www.cicalia.com/it/img/imgproducts/44250/l_44250.jpg",
+          "naziv": "Punk",
+          "boja": "Svetlo",
+          "procenat": "7.5%",
+          "ia": "IPA"
+        },
+        {
+          "id": 1,
+          "imgsrc": "http://www.elliescellar.com/user/products/large/HopShot.png",
+          "naziv": "Hop Shot",
+          "boja": "Svetlo",
+          "procenat": "5.5%",
+          "ia": "APA"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Zebrew",
+      "imgsrc": "https://www.kraftlokator.com/wp-content/uploads/2017/05/Zebrew.png",
+      "description": "Zebrew je mala craft pivara, koja konstantno nastoji da zaljubljenicima u craft pivo, ponudi nove kombinacije ukusa i pomera granice craft pivarstva. Zbog stalne želje za eksperimentisanjem, nastaju najneobičnije kombinacije najkvalitetnijih sastojaka.",
+      "piva": [
+        {
+          "id": 0,
+          "imgsrc": "https://res.cloudinary.com/ratebeer/image/upload/w_152,h_309,c_pad,d_beer_img_default.png,f_auto/beer_386690",
+          "naziv": "Tropical IPA",
+          "boja": "Svetlo",
+          "procenat": "7.5%",
+          "ia": "IPA"
+        },
+        {
+          "id": 1,
+          "imgsrc": "https://res.cloudinary.com/ratebeer/image/upload/w_152,h_309,c_pad,d_beer_img_default.png,f_auto/beer_386694",
+          "naziv": "Ice Crewam Stout",
+          "boja": "Svetlo",
+          "procenat": "5.5%",
+          "ia": "APA"
+        }
+      ]
     }
   ],
   "beers": [
@@ -56,127 +218,152 @@
       "company": "Crew",
       "ipa-apa": "ipa",
       "color": "svetlo",
-      "id": 1
+      "id": 1,
+      "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/04/Svetionik-Compressor.jpg"
     },
     {
-      "name": "Ministarsko",
+      "name": "Albino",
       "alcohol": "7",
-      "company": "Ministarstvo",
+      "company": "Dogma",
       "ipa-apa": "ipa",
       "color": "svetlo",
-      "id": 2
+      "id": 2,
+      "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/07/Albino-Compressor.jpg"
     },
     {
-      "name": "DrIPAc",
+      "name": "Hoptopod",
       "alcohol": "10",
-      "company": "Ministarstvo",
+      "company": "Dogma",
       "ipa-apa": "ipa",
       "color": "svetlo",
-      "id": 3
+      "id": 3,
+      "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/05/zanasko-pivo-hoktopod-dogma-brewery.jpg"
     },
     {
-      "name": "Grizzly",
+      "name": "Easy Summer",
       "alcohol": "12.5",
-      "company": "KORS",
+      "company": "Crew",
       "ipa-apa": "ipa",
       "color": "svetlo",
-      "id": 4
+      "id": 4,
+      "imgsrc": "https://cdn02.plentymarkets.com/99cbvkn2wswt/item/images/494/full/Crew-Republic-Easy-Summer.jpg"
     },
     {
-      "name": "Pilsner",
+      "name": "Punk",
       "alcohol": "5",
-      "company": "Pilsner",
+      "company": "Brewdog",
       "ipa-apa": "apa",
       "color": "tamno",
-      "id": 5
+      "id": 5,
+      "imgsrc": "https://www.brewdog.com/images/products/large/1502198090punk_bottle.jpg"
     },
     {
-      "name": "Alien",
+      "name": "Pink",
       "alcohol": "7",
+      "company": "Brewdog",
+      "ipa-apa": "apa",
+      "color": "tamno",
+      "id": 6,
+      "imgsrc": "https://www.brewdog.com/images/products/large/1520269698PinkIPAshopimage.png"
+    },
+    {
+      "name": "Tropical",
+      "alcohol": "10",
+      "company": " Zebrew",
+      "ipa-apa": "apa",
+      "color": "tamno",
+      "id": 7,
+      "imgsrc": "https://res.cloudinary.com/ratebeer/image/upload/w_152,h_309,c_pad,d_beer_img_default.png,f_auto/beer_386690"
+    },
+    {
+      "name": "Ice Cream Stout",
+      "alcohol": "12.5",
+      "company": "Zebrew",
+      "ipa-apa": "apa",
+      "color": "tamno",
+      "id": 8,
+      "imgsrc": "http://media.beerstore.rs/2018/03/Ice-cream-stout.jpg"
+    },
+    {
+      "name": "Mozaik",
+      "alcohol": "5",
+      "company": "Kabinet",
+      "ipa-apa": "apa",
+      "color": "svetlo",
+      "id": 9,
+      "imgsrc": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/668e6723842723.56329c4fc4c6b.jpg"
+    },
+    {
+      "name": "Brka",
+      "alcohol": "7",
+      "company": "Kabinet",
+      "ipa-apa": "apa",
+      "color": "svetlo",
+      "id": 10,
+      "imgsrc": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e9f80a17519969.562d7f9a70ac2.jpg"
+    },
+    {
+      "name": "Bad Copy",
+      "alcohol": "10",
+      "company": "Kabinet",
+      "ipa-apa": "apa",
+      "color": "svetlo",
+      "id": 11,
+      "imgsrc": "https://res.cloudinary.com/ratebeer/image/upload/w_152,h_309,c_pad,d_beer_img_default.png,f_auto/beer_381479"
+    },
+    {
+      "name": "SuperNova",
+      "alcohol": "12.5",
+      "company": "Kabinet",
+      "ipa-apa": "apa",
+      "color": "svetlo",
+      "id": 12,
+      "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/05/Kabinet-pivo-SuperNova.png"
+    },
+    {
+      "name": "Plavo",
+      "alcohol": "5",
+      "company": "Kabinet",
+      "ipa-apa": "ipa",
+      "color": "tamno",
+      "id": 13,
+      "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/05/Kabinet-pivo-Porter-300x300.png"
+    },
+    {
+      "name": "Porter",
+      "alcohol": "7",
+      "company": "Kabinet",
+      "ipa-apa": "ipa",
+      "color": "tamno",
+      "id": 14,
+      "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/05/Kabinet-pivo-Porter.png"
+    },
+    {
+      "name": "Sunshine",
+      "alcohol": "10",
       "company": "Crow",
-      "ipa-apa": "apa",
+      "ipa-apa": "ipa",
       "color": "tamno",
-      "id": 6
+      "id": 15,
+      "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/05/zanasko-pivo-sunshine-crow-brewery.jpg"
     },
     {
-      "name": "Disco",
-      "alcohol": "10",
-      "company": "Kabinet",
-      "ipa-apa": "apa",
-      "color": "tamno",
-      "id": 7
-    },
-    {
-      "name": "Shatzi",
+      "name": "Jolly",
       "alcohol": "12.5",
-      "company": "Kabinet",
-      "ipa-apa": "apa",
-      "color": "tamno",
-      "id": 8
-    },
-    {
-      "name": "Dilemma",
-      "alcohol": "5",
-      "company": "Dilemma",
-      "ipa-apa": "apa",
-      "color": "svetlo",
-      "id": 9
-    },
-    {
-      "name": "Korsar",
-      "alcohol": "7",
-      "company": "Kors",
-      "ipa-apa": "apa",
-      "color": "svetlo",
-      "id": 10
-    },
-    {
-      "name": "Skiper",
-      "alcohol": "10",
-      "company": "Tron",
-      "ipa-apa": "apa",
-      "color": "svetlo",
-      "id": 11
-    },
-    {
-      "name": "Salto",
-      "alcohol": "12.5",
-      "company": "Salto",
-      "ipa-apa": "apa",
-      "color": "svetlo",
-      "id": 12
-    },
-    {
-      "name": "Pirate",
-      "alcohol": "5",
       "company": "Crow",
       "ipa-apa": "ipa",
       "color": "tamno",
-      "id": 13
+      "id": 16,
+      "imgsrc": "http://www.kovoli.com/dev/wp-content/uploads/2017/05/zanasko-pivo-jolly-crow-brewery-686x686.jpg"
     },
     {
-      "name": "Pivdzan",
-      "alcohol": "7",
-      "company": "Pivdzan",
+      "name": "Hop Shot",
+      "alcohol": "5",
+      "company": "Brewdog",
       "ipa-apa": "ipa",
-      "color": "tamno",
-      "id": 14
-    },
-    {
-      "name": "Heartbeet",
-      "alcohol": "10",
-      "company": "Tron",
-      "ipa-apa": "ipa",
-      "color": "tamno",
-      "id": 15
-    },
-    {
-      "name": "Olga",
-      "alcohol": "12.5",
-      "company": "Kabinet",
-      "ipa-apa": "ipa",
-      "color": "tamno",
-      "id": 16
+      "color": "svetlo",
+      "id": 17,
+      "imgsrc": "http://www.elliescellar.com/user/products/large/HopShot.png"
     }
   ]
 }

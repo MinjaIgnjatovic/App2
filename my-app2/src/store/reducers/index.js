@@ -1,12 +1,14 @@
 import {combineReducers} from 'redux'; 
-import postReducer from './postReducer';
-import fetchReducer from './fetchReducer';
-import pronadjiReducer from './pronadjiReducer';
+import breweriesReducer from './breweries.reducer';
+import beersReducer from './beers.reducer';
+import breweryDetails from './brewery-details.reducer'
+import commentsReducer from './comments.reducer'
 
 const rootReducer=combineReducers({
-    posts:fetchReducer,
-    newPost:postReducer,
-    pronadji:pronadjiReducer
+    breweries:breweriesReducer,
+    selectedBrewery:breweryDetails,
+    foundBeers:beersReducer,
+    comments:commentsReducer
      
 });
 

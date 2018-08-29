@@ -32,17 +32,7 @@ class Komentarform extends Component{
 	//this.state=post;
    this.props.dodaj(post);
 
-	fetch("http://localhost:3000/comments",{
-		method:'POST',
-		headers:{
-			'content-type':'application/json'
-		},
-		body:JSON.stringify(post)
-	})
-	.then(res=>res.json())
-	.then(data=>console.log(data));
-
-   }
+}
 	
 	render(){
         return(

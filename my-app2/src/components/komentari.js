@@ -4,20 +4,11 @@ import { bindActionCreators } from 'redux';
 import {fetchPosts,addPost} from '../store/actions';
 
 class Komentari extends Component{
-	constructor(props){
-		super(props);
-		this.state={
-			posts:[],
-		};
 	
-	}
 	componentDidMount(){
-		fetch('http://localhost:3000/comments')
-		  .then(response => response.json())
-		  .then(json => {
-			this.setState({ posts: json });
-		  });
+		this.props.ucitajKomentare();
 	}
+
 	 render(){
 		return(
 			
@@ -28,9 +19,12 @@ class Komentari extends Component{
 						<div className="contact-heading">
 							<h1>Komentari i utisci posetilaca</h1>
 							<ul>
-								
+							<table class='table table-hover'>
+					<tbody>
 								{this.renderList()}
-								{this.renderPost()}
+								
+								</tbody>
+								</table>
 						</ul>
 						</div>
 					</div>
@@ -41,19 +35,18 @@ class Komentari extends Component{
 	}
 
 	renderList(){
-	//console.log(this.state);
-		const {posts}=this.state;
-
-		return(posts.map(post=>{
+		
+		if(this.props.comments!=null){
+		return(this.props.comments.map(comment=>{
 			return(
-				
-				<li key={post.email}>
-				<strong>{post.username}: </strong>
-				<span>{post.comment}</span>
-				</li>
-			)
+						<tr id={comment.id}>
+							<td><strong>{comment.username}: </strong></td>
+							<td><span>{comment.comment}</span></td>
+						</tr>
+				)
 		})
 	)
+}
 }
 renderPost(){
 	return(
@@ -65,56 +58,18 @@ renderPost(){
 	)
 }
 		          
-	
-/*
-	render(){
-		return(
-			
-			<div id="contact">
-			<div className="container">
-				<div className="row">
-					<div className="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-						<div className="contact-heading">
-							<h1>Komentari i utisci posetilaca</h1>
-							<ul>
-								
-								{this.renderList()}
-								
-								
-						</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		)
-	}
-
-	renderList(){
-	
-		if(!this.props.posts)
-            {
-                return <li>Loading...</li>
-            }
-		return(this.props.posts.map(post=>{
-			return(
-				
-				<li key={post.email}>
-				<strong>{post.username}: </strong>
-				<span>{post.comment}</span>
-				</li>
-				
-			)
-		})
-	)
-	}*/
 }
 
-	function mapStateToProps (state)
-{
+function mapStateToProps (state){
     return{
-		//posts: state.posts,
+		comments: state.comments,
 		newPost:state.newPost
     }
 }
-export default connect(mapStateToProps)(Komentari);
+function MapDispatchToProps(dispatch)
+{
+	return bindActionCreators({
+		ucitajKomentare:fetchPosts
+	},dispatch);
+}
+export default connect(mapStateToProps,MapDispatchToProps)(Komentari);

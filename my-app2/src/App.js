@@ -6,7 +6,6 @@ import {createStore, applyMiddleware} from 'redux';
 //import rootReducer from './reducers';
 
 import Header from './components/header.js';
-import Aboutbg from './components/about-bg.js';
 import About from './components/about.js';
 import Bottomfotter from './components/bottomfooter.js';
 import Client from './components/client.js';
@@ -28,7 +27,6 @@ export default class App extends Component {
         <Header> </Header>
         
         <About> </About>
-        <Aboutbg> </Aboutbg>
         <Service> </Service>
         <Portfolio> </Portfolio>
         <KomentarForm>  </KomentarForm>
@@ -44,6 +42,7 @@ export default class App extends Component {
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
       <script src="js/script.js"></script>
       <script src="contactform/contactform.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
     </div>
   
 

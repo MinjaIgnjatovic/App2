@@ -7,13 +7,100 @@ body {
   height:300px;
   width:330px;
 }
+#myModal{
+  overflow-y:auto;
+}
+#foundBeer{
+height:200px;
+width:300px;
 
+}
+.content-box{
+  margin-top:-200px;
+}
+#about{
+	background-image: url("https://scontent.fbeg3-1.fna.fbcdn.net/v/t1.0-9/12715230_818338008289277_3200668298982423765_n.jpg?_nc_cat=0&_nc_eui2=AeH-hSB9yYw8ilCichvWlsTcZE31BaaLfJsyZAreMrKSB_CnGMffTdw_Ux8GM-CIaWwG4x1zNdD88_VlpAPIJnaufTn53ef-DMn6nF12AiHD0Q&oh=736856902965b3e2edcef357c9964439&oe=5BBB58E9");
+  margin-top: 150px;
+  margin-bottom:100px;
+  color:white;
+  height:600px;
+}
+.modal-dialog{
+position:absolute;
+}
+#slika{
+  width:250px;
+
+  height:200px;
+  float:left;
+  margin-left:-145px;
+
+
+}
+
+#slikaa{
+  width:250px;
+  height:200px;
+  border-radius:160px;
+
+}
+#home{
+  height:20px;
+}
+#about-bg{
+  height:700px;
+  margin-top:-500px;
+}
+.slicka{
+  height:105px;
+  width:95px;
+}
 .pronadjen{
   color:white;
   font-size:20px;
 }
 #contact .container .row{
   width:90%;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  position:absolute;
+}
+h2{
+  color:white;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 html {
